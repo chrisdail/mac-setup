@@ -1,1 +1,0 @@
-/Users/dailc/code/personal/mac-setup/dotfiles/.vim

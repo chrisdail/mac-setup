@@ -2,7 +2,7 @@ tap "caskroom/cask"
 tap "caskroom/fonts"
 tap "homebrew/bundle"
 tap "homebrew/core"
-tap "homebrew/versions
+tap "homebrew/versions"
 
 # Command line
 brew "fish"
@@ -31,7 +31,6 @@ brew "protobuf"
 brew "python3"
 brew "node"
 cask "java"
-brew "phantomjs"
 
 # Fonts
 cask "caskroom/fonts/font-inconsolata"

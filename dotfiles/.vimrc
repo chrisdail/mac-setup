@@ -1,6 +1,6 @@
 syntax on
 set background=dark
-colorscheme codedark
+colorscheme darcula
 
 set tabstop=4
 set softtabstop=4
