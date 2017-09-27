@@ -4,8 +4,8 @@
 
 [alias]
     st = status -sb
-    l = log --oneline
-    ul = log origin/dev..dev --oneline
+    l = log --oneline --decorate --pretty=format:'%C(yellow)%h %Cgreen%ad %Cblue%an%Cgreen%d %x09%Creset%s' --date=short
+    ul = !git l origin/master..master
     p = pull --rebase
     pp = !git pull --rebase && git push
     deltag = !sh -c 'git tag -d $1 && git push origin :refs/tags/$1' -
