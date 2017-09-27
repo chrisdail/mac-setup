@@ -1,0 +1,33 @@
+[user]
+    email = Christopher.Dail@emc.com
+    name = Chris Dail
+
+[alias]
+    st = status -sb
+    l = log --oneline
+    ul = log origin/dev..dev --oneline
+    p = pull --rebase
+    pp = !git pull --rebase && git push
+    deltag = !sh -c 'git tag -d $1 && git push origin :refs/tags/$1' -
+    ignore = !git update-index --assume-unchanged $1
+
+[http]
+	sslVerify = false
+
+[diff]
+	renamelimit = 20000
+
+[color]
+    ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+
+[push]
+	default = current
+
+[url "https://"]
+	insteadOf = git://
+
+[credential]
+	helper = osxkeychain

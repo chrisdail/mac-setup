@@ -1,0 +1,23 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.autoSave": "onFocusChange",
+    "go.gopath": "/Users/dailc/code/platform/go",
+    "go.formatOnSave": true,
+    "go.formatTool": "goimports",
+    "editor.fontSize": 12,
+    "editor.fontFamily": "Fira Code, Inconsolata, 'Dejavu Sans Mono', Consolas",
+    "editor.detectIndentation": true,
+    "files.associations": {
+        "Vagrantfile": "ruby"
+    },
+    "workbench.colorTheme": "Monokai Dimmed",
+    "spellchecker.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "json"
+    ],
+    "[markdown]": {
+        "editor.wordwrap": "on"
+    }
+}

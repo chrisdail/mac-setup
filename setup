@@ -1,0 +1,77 @@
+#!/bin/bash
+
+DIR=$( cd "$( dirname "$0" )" && pwd )
+DOTFILES=$DIR/dotfiles
+
+linked() {
+    ln -sf "$DOTFILES/$1" "$HOME/$1"
+}
+
+dotfiles() {
+    echo Linking all dotfiles to home directory
+    linked .vimrc
+    linked .vim
+    linked .gitconfig
+    linked .tmux.conf
+    linked Library/Preferences/com.googlecode.iterm2.plist
+
+    mkdir -p ~/.config/fish/functions
+    linked .config/fish/config.fish
+    linked .config/fish/functions/fish_prompt.fish
+
+    mkdir -p ~/Library/Application\ Support/Code/User
+    linked "Library/Application Support/Code/User/settings.json"
+    linked "Library/Application Support/Code/User/keybindings.json"
+}
+
+updateBrew() {
+    which brew
+    if [ $? -ne 0 ] ; then
+        echo Installing Homebrew
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    fi
+
+    echo Updating Homebrew
+    brew update
+    brew upgrade
+}
+
+brewBundle() {
+    echo Installing packages from Brewfile
+    brew bundle
+}
+
+fish() {
+    echo Setting shell to fish
+    # Add fish to shells
+    grep fish /etc/shells
+    if [ $? -ne 0 ]; then
+        sudo sh -c "echo /usr/local/bin/fish >> /etc/shells"
+    fi
+
+    # Change shell to fish
+    chsh -s /usr/local/bin/fish
+}
+
+codeExtensions() {
+    echo Installing VS Code Extensions
+    code --install-extension DavidAnson.vscode-markdownlint
+    code --install-extension lukehoban.Go
+    code --install-extension PeterJausovec.vscode-docker
+    code --install-extension donjayamanne.python
+    code --install-extension swyphcosmo.spellchecker
+}
+
+typr() {
+    echo Installing Typr
+    if [ ! -d ~/Applications/Typr.app ]; then
+        (cd ~/Applications && wget https://github.com/chrisdail/typr/releases/download/v0.1/Typr.zip && unzip Typr.zip && rm Typr.zip)
+    fi
+}
+
+dotfiles
+updateBrew
+brewBundle
+fish
+codeExtensions
+typr
