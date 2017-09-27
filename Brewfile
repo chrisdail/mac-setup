@@ -49,7 +49,6 @@ cask "cerebro"
 #cask "alfred"
 cask "dropbox"
 cask "karabiner-elements"
-cask "transmission"
 cask "typora"
 cask "spectacle"
 
