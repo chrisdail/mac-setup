@@ -33,7 +33,9 @@ brew "node"
 cask "java"
 
 # Fonts
-cask "caskroom/fonts/font-inconsolata"
+cask "caskroom/fonts/font-inconsolata-g-for-powerline"
+cask "caskroom/fonts/font-dejavu-sans-mono-for-powerline"
+cask "caskroom/fonts/font-source-code-pro"
 cask "caskroom/fonts/font-fira-code"
 
 # Apps
