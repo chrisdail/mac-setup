@@ -58,6 +58,7 @@ fish() {
 
     # Change shell to fish
     chsh -s /usr/local/bin/fish
+    mkdir ~/bin
 }
 
 codeExtensions() {
@@ -72,6 +73,7 @@ codeExtensions() {
 typr() {
     echo Installing Typr
     if [ ! -d ~/Applications/Typr.app ]; then
+        mkdir ~/Applications
         (cd ~/Applications && wget https://github.com/chrisdail/typr/releases/download/v0.1/Typr.zip && unzip Typr.zip && rm Typr.zip)
     fi
 }

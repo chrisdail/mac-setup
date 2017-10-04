@@ -26,11 +26,11 @@ cask "intellij-idea-ce"
 
 # Languages
 brew "go"
+cask "java"
 brew "gradle"
 brew "protobuf"
 brew "python3"
 brew "node"
-cask "java"
 
 # Fonts
 cask "caskroom/fonts/font-inconsolata-g-for-powerline"
