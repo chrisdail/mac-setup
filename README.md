@@ -28,3 +28,8 @@ git clone https://github.com/chrisdail/mac-setup.git ~/code/mac-setup
 cd ~/code/mac-setup
 ./setup
 ```
+
+## Optional Manual Steps
+
+Mouse Acceleration fix is located in the `misc` directory. 
+http://triq.net/mac/mouse-acceleration
