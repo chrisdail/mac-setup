@@ -21,7 +21,8 @@ Run the setup script. This will:
 * Install brew apps, casks, fonts (from `Brewfile`)
 * Set shell as Fish
 * Install some VS Code extensions using their CLI
-* Install Typr (Utility I wrote for tracking words typed per day)
+* Set a super high key repeat rate
+* Set diffmerge as git difftool
 
 To install, clone the repo and run `./setup`:
 
