@@ -98,7 +98,7 @@ diffTool() {
 dotfiles
 updateBrew
 brewBundle
-iTermConfig
+#iTermConfig
 fish
 codeExtensions
 #typr

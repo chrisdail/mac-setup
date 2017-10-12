@@ -885,7 +885,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/dailc/code/platform</string>
+			<string>~/code/platform</string>
 		</dict>
 	</array>
 	<key>NoSyncConfirmBeta</key>
@@ -972,7 +972,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/dailc/code/mac-setup/dotfiles/iTerm2</string>
+	<string>~/code/mac-setup/dotfiles/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
