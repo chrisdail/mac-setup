@@ -26,7 +26,7 @@ Run the setup script. This will:
 To install, clone the repo and run `./setup`:
 
 ```
-git clone https://github.com/chrisdail/mac-setup.git ~/code/mac-setup
+git clone https://github.com/jadnhm/mac-setup.git ~/code/mac-setup
 cd ~/code/mac-setup
 ./setup
 ```
