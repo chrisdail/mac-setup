@@ -1,6 +1,8 @@
 # Mac Development Environment Setup
 
-This repository provides my default mac environment setup. Feel free to fork and customize.
+This repository provides my default mac environment setup. 
+
+This is forked from [Chris Dail's](https://github.com/chrisdail/mac-setup) project.
 
 ## Prerequisites
 
@@ -19,12 +21,13 @@ Run the setup script. This will:
 * Install brew apps, casks, fonts (from `Brewfile`)
 * Set shell as Fish
 * Install some VS Code extensions using their CLI
-* Install Typr (Utility I wrote for tracking words typed per day)
+* Set a super high key repeat rate
+* Set diffmerge as git difftool
 
 To install, clone the repo and run `./setup`:
 
 ```
-git clone https://github.com/chrisdail/mac-setup.git ~/code/mac-setup
+git clone https://github.com/jadnhm/mac-setup.git ~/code/mac-setup
 cd ~/code/mac-setup
 ./setup
 ```

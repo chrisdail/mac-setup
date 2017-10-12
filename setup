@@ -37,7 +37,7 @@ updateBrew() {
 
 brewBundle() {
     echo Installing packages from Brewfile
-    brew bundle
+    brew bundle --verbose
 }
 
 iTermConfig() {
@@ -78,10 +78,35 @@ typr() {
     fi
 }
 
+keyRepeat() {
+    echo Setting Key Repeat Rate
+    # defaults write -g ApplePressAndHoldEnabled -bool false
+    defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+    defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+}
+
+showHiddenFiles() {
+    defaults write com.apple.finder AppleShowAllFiles YES
+    killall Finder /System/Library/CoreServices/Finder.app
+}
+
+diffTool() {
+    echo Setting git diffTool
+    git config --global diff.tool diffmerge
+    git config --global difftool.diffmerge.cmd "/usr/local/bin/diffmerge \"\$LOCAL\" \"\$REMOTE\""
+
+    git config --global merge.tool diffmerge
+    git config --global mergetool.diffmerge.trustExitCode true
+    git config --global mergetool.diffmerge.cmd "/usr/local/bin/diffmerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+}
+
 dotfiles
 updateBrew
 brewBundle
-iTermConfig
+#iTermConfig
 fish
 codeExtensions
-typr
+#typr
+keyRepeat
+showHiddenFiles
+diffTool

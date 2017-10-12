@@ -3,7 +3,7 @@ set fish_greeting ""
 # Env
 set -gx EDITOR vim
 set -gx GOPATH ~/code/platform/go
-set -gx JARVIS_USERNAME chrisdail
+set -gx JARVIS_USERNAME joel.dunham
 
 # PATH
 set -gx PATH ~/bin /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin $PATH
