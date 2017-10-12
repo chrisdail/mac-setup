@@ -18,11 +18,14 @@ brew "tree"
 brew "wget"
 brew "openssl"
 brew "htop"
+cask "macpar-deluxe"
 
 # Editors
 brew "vim"
 cask "visual-studio-code"
 cask "intellij-idea-ce"
+cask "bbedit"
+cask "diffmerge"
 
 # Languages
 brew "go"
@@ -39,32 +42,44 @@ cask "caskroom/fonts/font-source-code-pro"
 cask "caskroom/fonts/font-fira-code"
 
 # Apps
-cask "evernote"
+#cask "evernote"
 cask "sqlitebrowser"
 cask "xmind"
 cask "iterm2"
 cask "superduper"
-cask "android-file-transfer"
+#cask "android-file-transfer"
 cask "cerebro"
 #cask "alfred"
-cask "dropbox"
+#cask "dropbox"
 cask "karabiner-elements"
 cask "typora"
 cask "spectacle"
+cask "fluid"
+cask "karabiner"
+cask "onyx"
+cask "smcfancontrol"
+cask "intel-power-gadget"
+cask "wireshark"
 
 # Unproductivity
 cask "spotify"
 cask "vlc"
 cask "aerial"
+cask "handbrake"
+cask "lastfm"
+cask "piezo"
 
 # Devtools
 brew "hub"
 brew "ansible"
 cask "slack"
 cask "virtualbox"
+cask "virtualbox-extension-pack"
 cask "vagrant"
 cask "docker"
+cask "sourcetree"
 
 # Browser
 cask "google-chrome"
 cask "google-hangouts"
+cask "firefox"
