@@ -85,6 +85,11 @@ keyRepeat() {
     defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 }
 
+showHiddenFiles() {
+    defaults write com.apple.finder AppleShowAllFiles YES
+    killall Finder /System/Library/CoreServices/Finder.app
+}
+
 diffTool() {
     echo Setting git diffTool
     git config --global diff.tool diffmerge
@@ -103,4 +108,5 @@ fish
 codeExtensions
 #typr
 keyRepeat
+showHiddenFiles
 diffTool
