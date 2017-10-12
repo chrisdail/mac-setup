@@ -37,7 +37,7 @@ updateBrew() {
 
 brewBundle() {
     echo Installing packages from Brewfile
-    brew bundle
+    brew bundle --verbose
 }
 
 iTermConfig() {
