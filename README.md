@@ -1,6 +1,8 @@
 # Mac Development Environment Setup
 
-This repository provides my default mac environment setup. Feel free to fork and customize.
+This repository provides my default mac environment setup. 
+
+This is forked from [Chris Dail's](https://github.com/chrisdail/mac-setup) project.
 
 ## Prerequisites
 
