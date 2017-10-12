@@ -85,6 +85,16 @@ keyRepeat() {
     defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 }
 
+diffTool() {
+    echo Setting git diffTool
+    git config --global diff.tool diffmerge
+    git config --global difftool.diffmerge.cmd "/usr/local/bin/diffmerge \"\$LOCAL\" \"\$REMOTE\""
+
+    git config --global merge.tool diffmerge
+    git config --global mergetool.diffmerge.trustExitCode true
+    git config --global mergetool.diffmerge.cmd "/usr/local/bin/diffmerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+}
+
 dotfiles
 updateBrew
 brewBundle
@@ -93,3 +103,4 @@ fish
 codeExtensions
 #typr
 keyRepeat
+diffTool
