@@ -6,7 +6,7 @@ set -gx GOPATH ~/code/platform/go
 set -gx JARVIS_USERNAME chrisdail
 
 # PATH
-set -gx PATH ~/bin /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin $PATH
+set -gx PATH ~/bin $PATH
 
 # Aliases
 alias vi='/usr/local/bin/vim'
