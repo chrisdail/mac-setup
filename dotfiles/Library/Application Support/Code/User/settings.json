@@ -11,12 +11,6 @@
         "Vagrantfile": "ruby"
     },
     "workbench.colorTheme": "Monokai Dimmed",
-    "spellchecker.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext",
-        "json"
-    ],
     "[markdown]": {
         "editor.wordwrap": "on"
     }

@@ -67,7 +67,7 @@ codeExtensions() {
     code --install-extension lukehoban.Go
     code --install-extension PeterJausovec.vscode-docker
     code --install-extension donjayamanne.python
-    code --install-extension swyphcosmo.spellchecker
+    code --install-extension streetsidesoftware.code-spell-checker
 }
 
 typr() {
