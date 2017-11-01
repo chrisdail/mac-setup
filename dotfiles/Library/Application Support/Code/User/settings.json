@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
     "files.autoSave": "onFocusChange",
-    "go.gopath": "~/code/platform/go",
+    "go.gopath": "~/code/switch/go",
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
     "editor.fontSize": 12,

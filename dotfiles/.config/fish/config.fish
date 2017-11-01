@@ -2,7 +2,7 @@ set fish_greeting ""
 
 # Env
 set -gx EDITOR vim
-set -gx GOPATH ~/code/platform/go
+set -gx GOPATH ~/code/switch/go
 set -gx JARVIS_USERNAME chrisdail
 
 # PATH

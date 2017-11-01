@@ -106,5 +106,6 @@ brewBundle
 iTermConfig
 fish
 codeExtensions
+# Note: If you clone my repo, you probably want to comment this out
 typr
 osxDefaults
