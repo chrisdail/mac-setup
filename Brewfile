@@ -41,7 +41,7 @@ cask "caskroom/fonts/font-fira-code"
 
 # Apps
 cask "evernote"
-cask "sqlitebrowser"
+cask "db-browser-for-sqlite"
 cask "xmind"
 cask "iterm2"
 cask "superduper"
@@ -61,6 +61,7 @@ cask "aerial"
 # Devtools
 brew "hub"
 brew "ansible"
+brew "terraform"
 cask "slack"
 cask "virtualbox"
 cask "virtualbox-extension-pack"
