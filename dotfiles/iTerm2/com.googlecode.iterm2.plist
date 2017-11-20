@@ -50,6 +50,47 @@
 	<false/>
 	<key>FsTabDelay</key>
 	<real>1</real>
+	<key>GlobalTouchBarMap</key>
+	<dict>
+		<key>touchbar:8C34CF39-33F5-40BF-9279-BCBFD41D4625</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Label</key>
+			<string>BCast</string>
+			<key>Text</key>
+			<string>Broadcast Input to All Panes in Current Tab
+Broadcast Input.Broadcast Input to All Panes in Current Tab</string>
+		</dict>
+		<key>touchbar:9B061AC5-C2E7-419E-A8BD-2FCA3974B2A0</key>
+		<dict>
+			<key>Action</key>
+			<integer>28</integer>
+			<key>Label</key>
+			<string>Split H</string>
+			<key>Text</key>
+			<string>2B7BBD1C-6485-46D5-8212-907CF26FE26F</string>
+		</dict>
+		<key>touchbar:B7F5E188-09AC-4FB2-93C5-5363F164849E</key>
+		<dict>
+			<key>Action</key>
+			<integer>29</integer>
+			<key>Label</key>
+			<string>Split V</string>
+			<key>Text</key>
+			<string>2B7BBD1C-6485-46D5-8212-907CF26FE26F</string>
+		</dict>
+		<key>touchbar:FA1F4D81-6108-4FC5-B86D-59CA0136C028</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Label</key>
+			<string>!BCast</string>
+			<key>Text</key>
+			<string>Send Input to Current Session Only
+Broadcast Input.Send Input to Current Session Only</string>
+		</dict>
+	</dict>
 	<key>HiddenAFRStrokeThickness</key>
 	<real>0.0</real>
 	<key>HiddenAdvancedFontRendering</key>
@@ -125,12 +166,35 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>2330 458 620 392 1680 -150 1920 1177 </string>
+	<key>NSTouchBarConfig: regular</key>
+	<dict>
+		<key>CurrentItems</key>
+		<array>
+			<string>iTermTouchBarIdentifierFunctionKeys</string>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>touchbar:8C34CF39-33F5-40BF-9279-BCBFD41D4625</string>
+			<string>touchbar:FA1F4D81-6108-4FC5-B86D-59CA0136C028</string>
+			<string>touchbar:9B061AC5-C2E7-419E-A8BD-2FCA3974B2A0</string>
+			<string>touchbar:B7F5E188-09AC-4FB2-93C5-5363F164849E</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+			<string>iTermTouchBarIdentifierAddMark</string>
+			<string>iTermTouchBarIdentifierPreviousMark</string>
+			<string>iTermTouchBarIdentifierNextMark</string>
+		</array>
+		<key>DefaultItems</key>
+		<array>
+			<string>iTermTouchBarIdentifierManPage</string>
+			<string>iTermTouchBarIdentifierColorPreset</string>
+			<string>iTermTouchBarIdentifierFunctionKeys</string>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+			<string>iTermTouchBarIdentifierAddMark</string>
+			<string>iTermTouchBarIdentifierPreviousMark</string>
+			<string>iTermTouchBarIdentifierNextMark</string>
+		</array>
+	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2520 106 796 473 1680 -150 1920 1177 </string>
-	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1786 132 865 807 1680 -150 1920 1177 </string>
+	<string>460 375 796 473 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_2B7BBD1C-6485-46D5-8212-907CF26FE26F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_2B7BBD1C-6485-46D5-8212-907CF26FE26F_selection</key>
@@ -884,9 +948,13 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>70B8E11B-F3EE-4021-8679-D8D0CC06EC82</string>
+	<string>F2BA86CE-5895-46FC-955D-A0230841082C</string>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>529006372.40686703</real>
+	<real>531321962.28198099</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -937,7 +1005,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/code/mac-setup/dotfiles/iTerm2</string>
+	<string>/Users/chris/code/mac-setup/dotfiles/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -946,18 +1014,12 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
-	<key>SUEnableAutomaticChecks</key>
-	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=99</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=97</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2017-10-11T15:46:20Z</date>
-	<key>SUSendProfileInfo</key>
-	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1009,6 +1071,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.2</string>
+	<string>3.1.4</string>
 </dict>
 </plist>
