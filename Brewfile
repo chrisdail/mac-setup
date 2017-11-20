@@ -27,6 +27,7 @@ cask "intellij-idea-ce"
 
 # Languages
 brew "go"
+cask "java8"
 cask "java"
 brew "gradle"
 brew "protobuf"

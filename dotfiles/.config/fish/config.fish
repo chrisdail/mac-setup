@@ -3,7 +3,7 @@ set fish_greeting ""
 # Env
 set -gx EDITOR vim
 set -gx GOPATH ~/code/switch/go
-set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
+set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 
 # PATH
 set -gx PATH ~/bin $PATH
