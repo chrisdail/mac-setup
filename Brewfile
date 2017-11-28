@@ -53,6 +53,7 @@ cask "karabiner-elements"
 cask "typora"
 cask "spectacle"
 cask "wireshark"
+cask "gitify"
 
 # Unproductivity
 cask "spotify"
