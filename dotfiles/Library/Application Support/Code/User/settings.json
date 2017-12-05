@@ -5,7 +5,8 @@
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
     "editor.fontSize": 12,
-    "editor.fontFamily": "Fira Code, Inconsolata, 'Dejavu Sans Mono', Consolas",
+    "editor.fontFamily": "'Fira Code', Inconsolata, 'Dejavu Sans Mono', Consolas",
+    "editor.fontLigatures": true,
     "editor.detectIndentation": true,
     "files.associations": {
         "Vagrantfile": "ruby"
