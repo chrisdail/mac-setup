@@ -73,6 +73,7 @@ cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "vagrant"
 cask "docker"
+cask "insomnia"
 
 # Browser
 cask "google-chrome"
