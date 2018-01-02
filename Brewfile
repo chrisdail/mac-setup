@@ -45,6 +45,7 @@ cask "caskroom/fonts/font-fira-code"
 # Apps
 cask "evernote"
 cask "db-browser-for-sqlite"
+cask "psequel"
 cask "xmind"
 cask "iterm2"
 cask "superduper"
