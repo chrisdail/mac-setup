@@ -7,7 +7,7 @@ set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Ho
 set -gx ANDROID_HOME ~/Library/Android/sdk
 
 # PATH
-set -gx PATH ~/bin ~/code/switch/devops/bin $PATH
+set -gx PATH ~/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin $PATH
 
 # Aliases
 alias vi='/usr/local/bin/vim'
