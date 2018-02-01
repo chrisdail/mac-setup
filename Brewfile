@@ -57,6 +57,7 @@ cask "typora"
 cask "spectacle"
 cask "wireshark"
 cask "gitify"
+cask "tigervnc-viewer"
 
 # Unproductivity
 cask "spotify"
