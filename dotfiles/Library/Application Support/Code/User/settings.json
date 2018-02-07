@@ -14,5 +14,6 @@
     "workbench.colorTheme": "Monokai Dimmed",
     "[markdown]": {
         "editor.wordwrap": "on"
-    }
+    },
+    "extensions.ignoreRecommendations": false
 }
