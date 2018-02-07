@@ -21,6 +21,9 @@ dotfiles() {
     mkdir -p ~/Library/Application\ Support/Code/User
     linked "Library/Application Support/Code/User/settings.json"
     linked "Library/Application Support/Code/User/keybindings.json"
+
+    mkdir -p ~/.ssh
+    linked .ssh/config
 }
 
 updateBrew() {
@@ -106,6 +109,6 @@ brewBundle
 iTermConfig
 fish
 codeExtensions
+osxDefaults
 # Note: If you clone my repo, you probably want to comment this out
 typr
-osxDefaults
