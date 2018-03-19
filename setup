@@ -71,6 +71,9 @@ codeExtensions() {
     code --install-extension PeterJausovec.vscode-docker
     code --install-extension donjayamanne.python
     code --install-extension streetsidesoftware.code-spell-checker
+    code --install-extension octref.vetur
+    code --install-extension mathiasfrohlich.Kotlin
+    code --install-extension jebbs.plantuml
 }
 
 typr() {

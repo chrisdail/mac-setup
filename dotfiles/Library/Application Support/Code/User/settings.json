@@ -15,5 +15,10 @@
     "[markdown]": {
         "editor.wordwrap": "on"
     },
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "plantuml.exportOutDirName": "/",
+    "plantuml.exportSubFolder": false,
+    "plantuml.includes": [
+        "styles/blue"
+    ]
 }
