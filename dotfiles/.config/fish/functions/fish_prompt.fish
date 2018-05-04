@@ -1,4 +1,52 @@
+function __format_time -d "Format milliseconds to a human readable format"
+  set -l milliseconds $argv[1]
+  set -l seconds (math "$milliseconds / 1000 % 60")
+  set -l minutes (math "$milliseconds / 60000 % 60")
+  set -l hours (math "$milliseconds / 3600000 % 24")
+  set -l days (math "$milliseconds / 86400000")
+  set -l time
+  set -l threshold $argv[2]
+
+  if test $days -gt 0
+    set time (command printf "$time%sd " $days)
+  end
+
+  if test $hours -gt 0
+    set time (command printf "$time%sh " $hours)
+  end
+
+  if test $minutes -gt 0
+    set time (command printf "$time%sm " $minutes)
+  end
+
+  if test $seconds -gt $threshold
+    set time (command printf "$time%ss " $seconds)
+  end
+
+  echo -e $time
+end
+
+# This creates a notification if the frontmost app is not already iterm.
+#
+# Found out about lsappinfo here: https://superuser.com/a/1004714
+#
+# Found alternative implementation using osascript later:
+# https://adrian-philipp.com/post/cmd-duration-fish-shell
+function slow_terminal_notifier
+  set current_app (lsappinfo info -only bundleid (lsappinfo front) | cut -d '"' -f4)
+
+  if [ "$current_app" != "com.googlecode.iterm2" ]
+    terminal-notifier \
+      -title "$history[1]" \
+      -message "Finished in $argv[1]" \
+      -sound "Pop" \
+      -activate "com.googlecode.iterm2"
+  end
+end
+
 function fish_prompt --description 'Write out the prompt'
+    set -l last_status $status
+
 	if not set -q __fish_git_prompt_show_informative_status
         set -g __fish_git_prompt_show_informative_status 1
     end
@@ -54,8 +102,6 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_git_prompt_color_cleanstate green --bold
     end
 
-    set -l last_status $status
-
     if not set -q __fish_prompt_normal
         set -g __fish_prompt_normal (set_color normal)
     end
@@ -74,6 +120,14 @@ function fish_prompt --description 'Write out the prompt'
         case '*'
             set color_cwd $fish_color_cwd
             set suffix '$'
+    end
+
+    if test $CMD_DURATION
+      set command_duration (__format_time $CMD_DURATION 5)
+      if test $command_duration
+        slow_terminal_notifier $command_duration
+        printf "\n%s~ $command_duration\n" (set_color yellow)
+      end
     end
 
     # PWD
