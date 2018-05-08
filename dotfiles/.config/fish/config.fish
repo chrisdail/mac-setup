@@ -5,13 +5,14 @@ set -gx EDITOR vim
 set -gx GOPATH ~/code/switch/go
 set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 set -gx ANDROID_HOME ~/Library/Android/sdk
-set -gx EPOXY_NOTIFY true
+set -gx EPOXY_VAULT_MODE shared
 
 # PATH
 set -gx PATH ~/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin $PATH
 
 # Aliases
 alias vi='/usr/local/bin/vim'
+alias gcleanup='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "staging" | xargs -n 1 git branch -d'
 
 # Abbreviations
 set -U fish_user_abbreviations
