@@ -6,6 +6,8 @@ set -gx GOPATH ~/code/switch/go
 set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 set -gx ANDROID_HOME ~/Library/Android/sdk
 set -gx EPOXY_VAULT_MODE shared
+set -gx EPOXY_QUICK true
+set -gx EPOXY_TOPOLOGY basic
 
 # PATH
 set -gx PATH ~/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin $PATH
