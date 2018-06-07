@@ -1,6 +1,18 @@
 // Place your settings in this file to overwrite the default settings
 {
     "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "Vagrantfile": "ruby"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules/**": true
+    },
     "go.gopath": "~/code/switch/go",
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
@@ -8,9 +20,6 @@
     "editor.fontFamily": "'Fira Code', Inconsolata, 'Dejavu Sans Mono', Consolas",
     "editor.fontLigatures": true,
     "editor.detectIndentation": true,
-    "files.associations": {
-        "Vagrantfile": "ruby"
-    },
     "workbench.colorTheme": "Monokai Dimmed",
     "[markdown]": {
         "editor.wordwrap": "on"
