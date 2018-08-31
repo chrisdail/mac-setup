@@ -118,7 +118,11 @@ function fish_prompt --description 'Write out the prompt'
             end
             set suffix '#'
         case '*'
-            set color_cwd $fish_color_cwd
+            if set -q EPOXY_ASSUME_ROLE_ARN
+                set color_cwd $fish_color_cwd_root
+            else
+                set color_cwd $fish_color_cwd
+            end
             set suffix '$'
     end
 
