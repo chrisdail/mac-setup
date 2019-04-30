@@ -20,10 +20,10 @@ brew "wget"
 brew "openssl"
 brew "htop"
 brew "cloc"
+brew "hugo"
 
 # Editors
-brew "vim"
-cask "visual-studio-code"
+brew "vim" cask "visual-studio-code"
 cask "intellij-idea-ce"
 
 # Languages
