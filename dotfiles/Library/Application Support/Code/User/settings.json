@@ -31,5 +31,6 @@
         "styles/blue"
     ],
     "window.zoomLevel": 0,
-    "search.followSymlinks": false
+    "search.followSymlinks": false,
+    "editor.minimap.enabled": false
 }

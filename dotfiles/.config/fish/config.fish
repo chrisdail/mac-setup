@@ -10,7 +10,7 @@ set -gx EPOXY_TOPOLOGY basic
 set -gx EPOXY_QUICK true
 
 # PATH
-set -gx PATH ~/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin $PATH
+set -gx PATH ~/bin ~/code/switch/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin $PATH
 
 # Aliases
 alias vi='/usr/local/bin/vim'
