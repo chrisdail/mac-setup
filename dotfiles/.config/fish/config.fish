@@ -15,6 +15,7 @@ set -gx PATH ~/bin ~/code/switch/bin ~/code/switch/devops/bin /usr/local/opt/pyt
 # Aliases
 alias vi='/usr/local/bin/vim'
 alias gcleanup='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "staging" | xargs -n 1 git branch -d'
+alias brokenlinks='find ./ -type l -exec file {} \; |grep broken'
 
 # Abbreviations
 set -U fish_user_abbreviations
