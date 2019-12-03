@@ -3,7 +3,8 @@
     "files.autoSave": "onFocusChange",
     "files.trimTrailingWhitespace": true,
     "files.associations": {
-        "Vagrantfile": "ruby"
+        "*.Vagrantfile": "ruby",
+        "*.shlib": "shellscript"
     },
     "files.exclude": {
         "**/.git": true,
