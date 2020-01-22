@@ -8,6 +8,7 @@ set -gx ANDROID_HOME ~/Library/Android/sdk
 set -gx EPOXY_ENV development
 set -gx EPOXY_TOPOLOGY basic
 set -gx EPOXY_QUICK true
+set -gx DOCKER_BUILDKIT 1
 
 # PATH
 set -gx PATH ~/bin ~/code/switch/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin $PATH
