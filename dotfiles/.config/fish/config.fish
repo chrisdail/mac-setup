@@ -2,7 +2,6 @@ set fish_greeting ""
 
 # Env
 set -gx EDITOR vim
-set -gx GOPATH ~/code/switch/go
 set -gx ANDROID_HOME ~/Library/Android/sdk
 
 set -gx EPOXY_ENV development
