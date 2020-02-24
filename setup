@@ -3,6 +3,10 @@
 DIR=$( cd "$( dirname "$0" )" && pwd )
 DOTFILES=$DIR/dotfiles
 
+xcode() {
+    xcode-select --install
+}
+
 linked() {
     ln -shf "$DOTFILES/$1" "$HOME/$1"
 }
@@ -111,6 +115,7 @@ watchPam() {
     sudo cp misc/pam.d_sudo /etc/pam.d/sudo
 }
 
+xcode
 dotfiles
 updateBrew
 brewBundle

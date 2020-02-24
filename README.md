@@ -2,18 +2,11 @@
 
 This repository provides my default mac environment setup. Feel free to fork and customize.
 
-## Prerequisites
-
-The Xcode commandline tools are required to install Homebrew. You can install them by running:
-
-```
-xcode-select --install
-```
-
 ## Install
 
 Run the setup script. This will:
 
+* Install Xcode commandline tools (required for Homebrew)
 * Install default `dotfiles` into user home directory. These are installed with symbolic links so any changes to these files will be reflected in the `mac-setup` repo.
 * Install homebrew
 * Install brew apps, casks, fonts (from `Brewfile`)
