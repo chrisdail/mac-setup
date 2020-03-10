@@ -70,10 +70,11 @@ fish() {
 
 codeExtensions() {
     echo Installing VS Code Extensions
-    code --install-extension DavidAnson.vscode-markdownlint
-    code --install-extension lukehoban.Go
-    code --install-extension PeterJausovec.vscode-docker
-    code --install-extension donjayamanne.python
+    code --install-extension mauve.terraform
+    code --install-extension ms-azuretools.vscode-docker
+    code --install-extension ms-python.python
+    code --install-extension wholroyd.jinja
+    code --install-extension ms-vscode.Go
     code --install-extension streetsidesoftware.code-spell-checker
     code --install-extension octref.vetur
     code --install-extension mathiasfrohlich.Kotlin
