@@ -35,6 +35,7 @@ cask "java"
 brew "gradle"
 brew "python3"
 brew "node"
+brew "yarn"
 brew "ruby"
 
 # Fonts
