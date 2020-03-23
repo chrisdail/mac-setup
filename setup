@@ -79,6 +79,7 @@ codeExtensions() {
     code --install-extension octref.vetur
     code --install-extension mathiasfrohlich.Kotlin
     code --install-extension jebbs.plantuml
+    code --install-extension slevesque.vscode-hexdump
 }
 
 typr() {
