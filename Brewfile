@@ -28,6 +28,7 @@ brew "lastpass-cli"
 # Editors
 brew "vim"
 cask "visual-studio-code"
+cask "hex-fiend"
 #cask "intellij-idea-ce"
 
 # Languages
