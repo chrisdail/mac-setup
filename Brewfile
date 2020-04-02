@@ -81,6 +81,7 @@ cask "docker"
 brew "docker-compose"
 brew "docker-credential-helper-ecr"
 cask "insomnia"
+brew "bbe"
 
 # VMs
 #cask "virtualbox"
