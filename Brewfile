@@ -57,6 +57,7 @@ cask "dropbox"
 cask "typora"
 cask "spectacle"
 cask "google-chrome"
+cask "menumeters"
 
 # Unproductivity
 cask "spotify"
