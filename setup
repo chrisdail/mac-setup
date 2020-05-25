@@ -107,6 +107,9 @@ osxDefaults() {
     # Remove all unwanted apps from the dock
     defaults delete com.apple.dock persistent-apps
     defaults delete com.apple.dock persistent-others
+
+    # Bluetooth audio
+    defaults write bluetoothaudiod "Enable AAC codec" -bool true
     
     killall Dock
     killall Finder /System/Library/CoreServices/Finder.app
