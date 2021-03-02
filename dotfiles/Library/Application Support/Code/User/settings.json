@@ -33,5 +33,11 @@
     ],
     "window.zoomLevel": 0,
     "search.followSymlinks": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "jupyter.askForKernelRestart": false,
+    "editor.columnSelection": false,
+    "editor.accessibilitySupport": "on"
 }

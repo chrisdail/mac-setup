@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import sys\nsys.path.insert(0, \"\/Users\/chris\/code\/motryx\/analytics-sandbox\")\n",
+    "uid" : "6F0A1409-8B8D-416D-A299-49658FB87ACD",
+    "name" : "Sandbox Module Import",
+    "keyword" : ""
+  }
+}
