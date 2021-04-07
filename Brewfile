@@ -86,6 +86,12 @@ cask "insomnia"
 brew "bbe"
 brew "cmake"
 
+# Data Science
+brew "numpy"
+brew "scipy"
+brew "ipython"
+brew "jupyter"
+
 # VMs
 #cask "virtualbox"
 #cask "virtualbox-extension-pack"
