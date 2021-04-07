@@ -69,7 +69,6 @@ cask "aerial"
 # Devtools
 brew "github/gh/gh"
 brew "lab"
-brew "ansible"
 brew "terraform"
 brew "packer"
 brew "kubectl"
