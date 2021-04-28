@@ -39,5 +39,7 @@
     },
     "jupyter.askForKernelRestart": false,
     "editor.columnSelection": false,
-    "editor.accessibilitySupport": "on"
+    "editor.accessibilitySupport": "on",
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "black --line-length 120"
 }
