@@ -85,6 +85,7 @@ brew "docker-credential-helper-ecr"
 cask "insomnia"
 brew "bbe"
 brew "cmake"
+brew "xsv"
 
 # Data Science
 brew "numpy"

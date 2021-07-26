@@ -41,5 +41,15 @@
     "editor.columnSelection": false,
     "editor.accessibilitySupport": "on",
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "black --line-length 120"
+    "python.formatting.blackPath": "black --line-length 120",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "[python]": {
+
+        "editor.wordBasedSuggestions": false
+    },
+    "python.analysis.extraPaths": [
+        "vitalapp-api"
+    ]
 }

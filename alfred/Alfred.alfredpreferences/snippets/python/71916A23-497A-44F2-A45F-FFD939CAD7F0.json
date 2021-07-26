@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import logging\nlogger = logging.getLogger(__name__)",
+    "uid" : "71916A23-497A-44F2-A45F-FFD939CAD7F0",
+    "name" : "",
+    "keyword" : ";logger"
+  }
+}
