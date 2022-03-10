@@ -59,6 +59,7 @@ cask "spectacle"
 cask "google-chrome"
 cask "menumeters"
 cask "meetingbar"
+cask "obsidian"
 
 # Unproductivity
 cask "spotify"
