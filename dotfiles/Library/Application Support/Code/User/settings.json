@@ -43,13 +43,18 @@
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "black --line-length 120",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "[python]": {
+
 
         "editor.wordBasedSuggestions": false
     },
     "python.analysis.extraPaths": [
         "vitalapp-api"
-    ]
+    ],
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }

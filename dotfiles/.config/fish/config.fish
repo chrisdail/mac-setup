@@ -10,7 +10,7 @@ set -gx EPOXY_QUICK true
 set -gx DOCKER_BUILDKIT 1
 
 # PATH
-set -gx PATH ~/bin ~/code/switch/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin $PATH
+set -gx PATH ~/bin ~/code/switch/bin ~/code/switch/devops/bin /usr/local/opt/python/libexec/bin ~/.cargo/bin $PATH
 
 # Aliases
 alias vi='/usr/local/bin/vim'

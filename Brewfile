@@ -25,18 +25,17 @@ brew "openssl"
 brew "htop"
 brew "cloc"
 brew "hugo"
+brew "poppler"
 
 # Editors
 brew "vim"
 cask "visual-studio-code"
 cask "hex-fiend"
-#cask "intellij-idea-ce"
 
 # Languages
 brew "go"
-cask "java"
-brew "gradle"
 brew "python3"
+brew "python-tk"
 brew "node"
 brew "yarn"
 brew "ruby"
@@ -68,7 +67,6 @@ cask "aerial"
 
 # Devtools
 brew "github/gh/gh"
-brew "lab"
 brew "terraform"
 brew "packer"
 brew "kubectl"
@@ -92,8 +90,3 @@ brew "numpy"
 brew "scipy"
 brew "ipython"
 brew "jupyter"
-
-# VMs
-#cask "virtualbox"
-#cask "virtualbox-extension-pack"
-#cask "vagrant"
