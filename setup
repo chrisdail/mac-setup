@@ -60,11 +60,13 @@ fish() {
     # Add fish to shells
     grep fish /etc/shells
     if [ $? -ne 0 ]; then
-        sudo sh -c "echo /usr/local/bin/fish >> /etc/shells"
+        #sudo sh -c "echo /usr/local/bin/fish >> /etc/shells"
+        sudo sh -c "echo /opt/homebrew/bin/fish >> /etc/shells"
     fi
 
     # Change shell to fish
-    chsh -s /usr/local/bin/fish
+    #chsh -s /usr/local/bin/fish
+    chsh -s /opt/homebrew/bin/fish
     mkdir ~/bin
 }
 
