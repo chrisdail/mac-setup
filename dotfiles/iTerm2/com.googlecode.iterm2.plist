@@ -304,12 +304,16 @@ Broadcast Input.Send Input to Current Session Only</string>
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.11373500525951385</real>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.11373500525951385</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.11373500525951385</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -997,7 +1001,7 @@ Broadcast Input.Send Input to Current Session Only</string>
 			<key>Thin Strokes</key>
 			<integer>1</integer>
 			<key>Transparency</key>
-			<real>0.047367326183431958</real>
+			<real>0.0021442819148936171</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
