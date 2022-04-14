@@ -11,6 +11,7 @@ tap "zaquestion/tap"
 # Command line
 brew "gnu-tar"
 brew "fish"
+brew "fisher"
 brew "git"
 brew "git-gui"
 brew "git-quick-stats"

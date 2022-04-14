@@ -70,6 +70,16 @@ fish() {
     mkdir ~/bin
 }
 
+nvm() {
+    # Install bass
+    fisher install edc/bass
+
+    # Install nvm
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+    linked .config/fish/functions/nvm.fish
+}
+
 codeExtensions() {
     echo Installing VS Code Extensions
     code --install-extension hashicorp.terraform
@@ -126,6 +136,7 @@ updateBrew
 brewBundle
 iTermConfig
 fish
+nvm
 codeExtensions
 osxDefaults
 watchPam
