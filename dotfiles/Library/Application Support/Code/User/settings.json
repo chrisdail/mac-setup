@@ -56,5 +56,6 @@
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
-    }
+    },
+    "jupyter.interactiveWindowMode": "perFile"
 }

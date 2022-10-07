@@ -24,10 +24,13 @@
 	branch = auto
 
 [push]
-	default = simple
+    #default = simple
+	autoSetupRemote = true
 
 [url "https://"]
 	insteadOf = git://
 
 [credential]
 	helper = osxkeychain
+[rebase]
+	autoStash = true

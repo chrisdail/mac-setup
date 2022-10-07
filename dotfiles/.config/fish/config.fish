@@ -2,7 +2,7 @@ set fish_greeting ""
 
 # Env
 set -gx EDITOR vim
-set -gx DOCKER_BUILDKIT 1
+set -gx DEV_ENV_FILE .env.dev.local
 
 # PATH
 set -gx PATH /opt/homebrew/bin ~/bin $PATH
