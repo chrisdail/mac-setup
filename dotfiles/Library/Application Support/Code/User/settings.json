@@ -31,7 +31,6 @@
     "plantuml.includes": [
         "styles/blue"
     ],
-    "window.zoomLevel": 0,
     "search.followSymlinks": false,
     "editor.minimap.enabled": false,
     "[yaml]": {
@@ -48,7 +47,8 @@
     "[python]": {
 
 
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnType": true
     },
     "python.analysis.extraPaths": [
         "vitalapp-api"
@@ -57,5 +57,11 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "jupyter.interactiveWindowMode": "perFile"
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "git.openRepositoryInParentFolders": "always",
 }

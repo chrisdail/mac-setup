@@ -46,6 +46,7 @@ cask "font-dejavu-sans-mono-for-powerline"
 cask "font-source-code-pro"
 cask "font-fira-code"
 cask "font-cascadia-mono"
+cask "font-monaspace"
 
 # Apps
 cask "db-browser-for-sqlite"
