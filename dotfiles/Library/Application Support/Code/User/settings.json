@@ -18,7 +18,7 @@
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
     "editor.fontSize": 12,
-    "editor.fontFamily": "'Fira Code', Inconsolata, 'Dejavu Sans Mono', Consolas",
+    "editor.fontFamily": "Monaspace, 'Fira Code', Inconsolata, 'Dejavu Sans Mono', Consolas",
     "editor.fontLigatures": true,
     "editor.detectIndentation": true,
     "workbench.colorTheme": "Monokai Dimmed",
@@ -47,7 +47,7 @@
     "[python]": {
 
 
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.formatOnType": true
     },
     "python.analysis.extraPaths": [

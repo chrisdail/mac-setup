@@ -702,7 +702,7 @@ Broadcast Input.Send Input to Current Session Only</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>InconsolataForPowerline-g 12</string>
+			<string>MonaspaceKryptonVar-Light 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
