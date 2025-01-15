@@ -22,6 +22,12 @@ dotfiles() {
     linked .config/fish/config.fish
     linked .config/fish/functions/fish_prompt.fish
 
+    mkdir -p ~/.config/ghostty
+    linked .config/ghostty/config
+
+    mkdir -p ~/.config/pip
+    linked .config/pip/pip.conf
+
     mkdir -p ~/Library/Application\ Support/Code/User
     linked "Library/Application Support/Code/User/settings.json"
     linked "Library/Application Support/Code/User/keybindings.json"
