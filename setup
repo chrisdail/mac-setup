@@ -29,8 +29,11 @@ dotfiles() {
     linked .config/pip/pip.conf
 
     mkdir -p ~/Library/Application\ Support/Code/User
+    mkdir -p ~/Library/Application\ Support/Cursor/User
     linked "Library/Application Support/Code/User/settings.json"
     linked "Library/Application Support/Code/User/keybindings.json"
+    linked "Library/Application Support/Cursor/User/settings.json"
+    linked "Library/Application Support/Cursor/User/keybindings.json"
 
     mkdir -p ~/.ssh
     linked .ssh/config
@@ -53,25 +56,15 @@ brewBundle() {
     brew bundle --verbose
 }
 
-iTermConfig() {
-    # Specify the preferences directory
-    defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DIR/dotfiles/iTerm2"
-
-    # Tell iTerm2 to use the custom preferences in the directory
-    defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-}
-
 fish() {
     echo Setting shell to fish
     # Add fish to shells
     grep fish /etc/shells
     if [ $? -ne 0 ]; then
-        #sudo sh -c "echo /usr/local/bin/fish >> /etc/shells"
         sudo sh -c "echo /opt/homebrew/bin/fish >> /etc/shells"
     fi
 
     # Change shell to fish
-    #chsh -s /usr/local/bin/fish
     chsh -s /opt/homebrew/bin/fish
     mkdir ~/bin
 }
@@ -84,18 +77,6 @@ nvm() {
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
     linked .config/fish/functions/nvm.fish
-}
-
-codeExtensions() {
-    echo Installing VS Code Extensions
-    code --install-extension hashicorp.terraform
-    code --install-extension ms-azuretools.vscode-docker
-    code --install-extension ms-python.python
-    code --install-extension ms-python.vscode-pylance
-    code --install-extension wholroyd.jinja
-    code --install-extension golang.go
-    code --install-extension octref.vetur
-    code --install-extension slevesque.vscode-hexdump
 }
 
 typr() {
@@ -140,10 +121,8 @@ xcode
 dotfiles
 updateBrew
 brewBundle
-iTermConfig
 fish
 nvm
-codeExtensions
 osxDefaults
 watchPam
 # Note: If you clone my repo, you probably want to comment this out

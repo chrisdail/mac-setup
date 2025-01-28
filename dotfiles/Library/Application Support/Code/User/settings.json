@@ -14,7 +14,7 @@
         "**/.DS_Store": true,
         "**/node_modules/**": true
     },
-    "go.gopath": "~/code/switch/go",
+    "go.gopath": "~/code/go",
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
     "editor.fontSize": 12,

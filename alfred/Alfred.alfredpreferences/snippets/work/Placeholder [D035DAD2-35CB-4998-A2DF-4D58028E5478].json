@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<img :src=\"branding.iconPlaceholder\" :alt=\"branding.abbreviated\" \/>",
+    "uid" : "D035DAD2-35CB-4998-A2DF-4D58028E5478",
+    "name" : "Placeholder",
+    "keyword" : ";place"
+  }
+}

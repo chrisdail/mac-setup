@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<img :src=\"branding.logoPrimary\" :alt=\"branding.appName\" \/>",
+    "uid" : "AAB70D23-1A09-41EC-BA29-2CDC742CE840",
+    "name" : "Logo",
+    "keyword" : ";logovue"
+  }
+}

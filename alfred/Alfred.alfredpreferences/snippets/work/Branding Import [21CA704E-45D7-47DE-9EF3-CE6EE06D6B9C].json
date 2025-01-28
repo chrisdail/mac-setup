@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import { branding } from '@\/config';",
+    "uid" : "21CA704E-45D7-47DE-9EF3-CE6EE06D6B9C",
+    "name" : "Branding Import",
+    "keyword" : ";imb"
+  }
+}

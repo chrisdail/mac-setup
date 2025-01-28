@@ -1,11 +1,11 @@
+tap "zaquestion/tap"
 tap "github/gh"
 tap "hashicorp/tap"
-tap "zaquestion/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
+tap "homebrew/cask-versions"
+tap "launchdarkly/tap"
+tap "ngrok/ngrok"
 tap "zaquestion/tap"
 
 # Command line
@@ -27,31 +27,28 @@ brew "htop"
 brew "cloc"
 brew "hugo"
 brew "poppler"
+brew "xsv"
 
 # Editors
 brew "vim"
 cask "visual-studio-code"
+cask "cursor"
 cask "hex-fiend"
 
 # Languages
 brew "go"
-brew "python3"
+brew "python@3.10"
 brew "node"
-brew "yarn"
 brew "ruby"
+brew "rust"
 
 # Fonts
-cask "font-inconsolata-g-for-powerline"
-cask "font-dejavu-sans-mono-for-powerline"
-cask "font-source-code-pro"
 cask "font-fira-code"
 cask "font-cascadia-mono"
 cask "font-monaspace"
 
 # Apps
 cask "db-browser-for-sqlite"
-#cask "psequel"
-cask "iterm2"
 cask "superduper"
 cask "alfred"
 cask "dropbox"
@@ -59,14 +56,14 @@ cask "spectacle"
 cask "menumeters"
 cask "meetingbar"
 cask "obsidian"
+cask "menumeters"
 
 # Unproductivity
 cask "spotify"
 cask "vlc"
-cask "aerial"
 
 # Devtools
-brew "github/gh/gh"
+brew "gh"
 brew "terraform"
 brew "packer"
 brew "kubectl"
@@ -80,14 +77,13 @@ cask "insomnia"
 brew "bbe"
 brew "cmake"
 brew "xsv"
+brew "ffmpeg"
+cask "ghostty"
+cask "hex-fiend"
+cask "ngrok"
+cask "mactex"
 
-# Data Science
-#brew "numpy"
-#brew "scipy"
-#brew "ipython"
-#brew "jupyter"
-
-# DH Provided
+# Dash Provided
 #cask "slack"
 #cask "google-chrome"
 #cask "zoom"
