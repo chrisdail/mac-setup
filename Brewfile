@@ -37,7 +37,7 @@ cask "hex-fiend"
 
 # Languages
 brew "go"
-brew "python@3.10"
+brew "python@3.13"
 brew "node"
 brew "ruby"
 brew "rust"
