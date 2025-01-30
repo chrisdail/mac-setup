@@ -3,6 +3,7 @@ set fish_greeting ""
 # Env
 set -gx EDITOR vim
 set -gx DEV_ENV_FILE .env.dev.local
+set -gx NODE_OPTIONS "--max-old-space-size=8192"
 
 # PATH
 set -gx PATH /opt/homebrew/bin ~/bin $PATH
