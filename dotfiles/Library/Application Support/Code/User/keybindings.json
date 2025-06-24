@@ -1,5 +1,12 @@
 // Place your key bindings in this file to overwrite the defaults
 [
 { "key": "cmd+[",                "command": "workbench.action.navigateBack" },
-{ "key": "cmd+]",          "command": "workbench.action.navigateForward" }
+{
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward"
+},
+{
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+}
 ]

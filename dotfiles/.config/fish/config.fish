@@ -30,3 +30,7 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+set --export --prepend PATH "/Users/chris.dail/.rd/bin"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
