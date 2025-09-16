@@ -6,7 +6,7 @@ set -gx DEV_ENV_FILE .env.dev.local
 set -gx NODE_OPTIONS "--max-old-space-size=8192"
 
 # PATH
-set -gx PATH /opt/homebrew/bin ~/bin $PATH
+set -gx PATH /opt/homebrew/bin /Users/chris.dail/Library/Python/3.13/bin ~/bin ~/.local/bin $PATH
 
 # Aliases
 alias vi='/opt/homebrew/bin/vim'
