@@ -2,7 +2,7 @@ set fish_greeting ""
 
 # Env
 set -gx EDITOR vim
-set -gx DEV_ENV_FILE .env.dev.local
+set -gx DEV_ENV_FILE .env.development.local
 set -gx NODE_OPTIONS "--max-old-space-size=8192"
 
 # PATH
@@ -10,7 +10,7 @@ set -gx PATH /opt/homebrew/bin /Users/chris.dail/Library/Python/3.13/bin ~/bin ~
 
 # Aliases
 alias vi='/opt/homebrew/bin/vim'
-alias gcleanup='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "staging" | xargs -n 1 git branch -d'
+alias gcleanup='git branch --merged | grep -v "\*" | grep -v "main" | xargs -n 1 git branch -d'
 alias brokenlinks='find ./ -type l -exec file {} \; |grep broken'
 
 # Abbreviations
@@ -34,3 +34,6 @@ end
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 set --export --prepend PATH "/Users/chris.dail/.rd/bin"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# 1Password Shell plugins
+source /Users/chris.dail/.config/op/plugins.sh

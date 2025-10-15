@@ -4,3 +4,4 @@ keybind = cmd+right=next_tab
 theme = catppuccin mocha
 font-family = Monaspace Argon Var
 font-style = Regular
+copy-on-select = clipboard
